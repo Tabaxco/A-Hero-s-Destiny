@@ -1,0 +1,11 @@
+heroi = [
+    {
+        "força" : 8,
+        "destreza" : 8,
+        "constituicao" : 8,
+        "inteligencia" : 8,
+        "sabedoria" : 8,
+        "carisma" : 8,
+    },
+]
+
