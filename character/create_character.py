@@ -5,7 +5,7 @@ respostas = []
 
 def atributorandom(respostas):
    for atributos in range(6):
-      respostas.append(randint(1, 15))
+      respostas.append(randint(8, 15))
 
 def usuarioroubando(respostas):
     respostas.clear()
@@ -13,16 +13,18 @@ def usuarioroubando(respostas):
     atributorandom(respostas)
 
 
-for dict in heroi:
-    for k, v in dict.items():
-        print(f'Quanto pontos deseja inserir em {k}?')
+def create_hero():
+    atributes = heroi
+    for dict in atributes:
+        for k, v in dict.items():
+            print(f'Quanto pontos deseja inserir em {k}?')
 
-        try:
-         escolha = int(input('Resposta: '))
-         respostas.append(escolha)
+            try:
+                escolha = int(input('Resposta: '))
+                respostas.append(escolha)
 
-        except Exception:
-           print("Digite apenas os valores que foram falados!")   
+            except Exception:
+                print("Digite apenas os valores que foram falados!")   
 
     if sum(respostas) != 72:
         usuarioroubando(respostas)
