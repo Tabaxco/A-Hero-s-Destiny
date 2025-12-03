@@ -7,5 +7,10 @@ heroi = [
         "sabedoria" : 8,
         "carisma" : 8,
     },
+    {
+        'nome' : None,
+        'idade' : None,
+        'raca' : None,
+     },
 ]
 
