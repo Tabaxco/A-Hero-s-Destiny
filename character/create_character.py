@@ -23,11 +23,15 @@ def modifierrace(hero, race):
         hero['sabedoria'] += 2
         hero['carisma'] += 1
 
+def hp_mana(hero, constituicao, inteligencia):
+    hero['hp'] = constituicao * 2
+    hero['mana'] = inteligencia * 2
+
 
 
 def create_hero():
     #Personagem
-    specs = heroi[1]
+    specs = heroi[0]
 
     nome = input('Eu não me lembro direito... Qual é o seu nome? ')
     print(f'Ah... Estou começando a me lembrar, {nome}!')
@@ -41,10 +45,11 @@ def create_hero():
         print("Você já conheceu os horrores desse mundo, não tem mais nada a perder.")
     elif idade >= 40:
         print("Velho...")
-        print("") 
+    print("") 
     sleep(2)
 
     print('De qual raça você era mesmo?')
+    sleep(2)
     print("""
 1 - Humano (+1 em todos os atributos)
 2 - Vampiro (+2 Destreza, +1 Inteligência)
@@ -56,9 +61,17 @@ def create_hero():
     specs['idade'] = idade
     specs['raca'] = raca
     
+    print()
+
+    print("Agora... Quero me lembrar de suas características...")
+    sleep(2)
+    print("Você possui: 15, 14, 13, 12, 10, 8 para distribuir entre seus atributos.")
+    print("Insira os valores corretamente!")
+    sleep(2)
+    print("")
 
     # Atributos
-    attributes = heroi[0]
+    attributes = heroi[1]
     for dict in attributes:
             print(f'Quanto pontos deseja inserir em {dict}?')
 
@@ -81,7 +94,11 @@ def create_hero():
 
     print(attributes)
     modifierrace(attributes, raca)
-    print(attributes)
+    
+    # Mana and HP 
+    hp_mana(heroi[2], heroi[1]['constituicao'], heroi[1]['inteligencia'])
+    print(heroi[2])
+
 
 
 create_hero()

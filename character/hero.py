@@ -1,6 +1,11 @@
 heroi = [
     {
-        "força" : 8,
+        'nome' : None,
+        'idade' : None,
+        'raca' : None,
+     },
+    {
+        "forca" : 8,
         "destreza" : 8,
         "constituicao" : 8,
         "inteligencia" : 8,
@@ -8,9 +13,7 @@ heroi = [
         "carisma" : 8,
     },
     {
-        'nome' : None,
-        'idade' : None,
-        'raca' : None,
-     },
+        "hp" : None,
+        "mana" : None
+    }
 ]
-
