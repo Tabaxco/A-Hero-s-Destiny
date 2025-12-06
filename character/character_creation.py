@@ -1,6 +1,6 @@
-from creating_character.specs import deciding_specs
-from creating_character.attributes import deciding_attributes
-from hero import heroi
+from character.creating_character.specs import deciding_specs
+from character.creating_character.attributes import deciding_attributes
+from character.hero import heroi
 
 def starting():
     race = deciding_specs()

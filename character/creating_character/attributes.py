@@ -1,7 +1,7 @@
-from hero import heroi
-from creating_character.usuarioroubou import usuarioroubando, atributorandom
-from creating_character.mana_hp import hp_mana
-from creating_character.races import modifierrace
+from character.hero import heroi
+from character.creating_character.usuarioroubou import usuarioroubando, atributorandom
+from character.creating_character.mana_hp import hp_mana
+from character.creating_character.races import modifierrace
 from time import sleep
 
 respostas = []

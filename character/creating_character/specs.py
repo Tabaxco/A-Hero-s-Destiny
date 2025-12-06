@@ -1,6 +1,6 @@
-from hero import heroi
+from character.hero import heroi
 from time import sleep
-from creating_character.races import modifierrace
+from character.creating_character.races import modifierrace
 
 specs = heroi[0]
 
