@@ -1,8 +1,6 @@
 from random import randint
 from monsters.monster import monstro
 
-
-
 racas = ['Goblin', 'Ogro', 'Javali']
 
 def escolher_raca_monstro():

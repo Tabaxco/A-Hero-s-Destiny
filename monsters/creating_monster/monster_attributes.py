@@ -1,5 +1,6 @@
 import random
 from monsters.monster import monstro
+from monsters.creating_monster.hp_mana_monster import hp_mana
 
 monstroatt = monstro[1]
 
@@ -20,3 +21,5 @@ def create_monster_attributes(floor, difficulty: str= "easy"):
     for dict in monstroatt:
         monstroatt[dict] = attributes[i]
         i += 1
+
+    hp_mana(monstro[2], monstro[1]['constituicao'], monstro[1]['inteligencia'] )
