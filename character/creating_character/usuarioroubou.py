@@ -7,5 +7,4 @@ def atributorandom(respostas):
 
 def usuarioroubando(respostas):
     respostas.clear()
-    respostas [:] = []
     atributorandom(respostas)

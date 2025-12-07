@@ -7,7 +7,7 @@ specs = heroi[0]
 def deciding_specs():
 
     #Decidir o nome
-    nome = input('Eu não me lembro direito... Qual é o seu nome? ')
+    nome = input('Qual é o seu nome? ')
     print(f'Ah... Estou começando a me lembrar, {nome}!')
     print("")
     sleep(2)
@@ -40,6 +40,6 @@ def deciding_specs():
     specs['idade'] = idade
     specs['raca'] = racasdisponiveis[raca-1]
 
-    return raca
-
     print()
+
+    return raca

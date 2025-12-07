@@ -1,4 +1,4 @@
-heroi = [
+monstro = [
     {
         'nome' : None,
         'idade' : None,

@@ -1,5 +1,10 @@
 from character.character_creation import starting
-from utils import cleanshell
+from utils.cleanshell import cleanse
+from character.hero import heroi
+from time import sleep
+from monsters.creating_monster.monster_race import escolher_raca_monstro
 
+escolher_raca_monstro()
 starting()
-cleanshell()
+sleep(5)
+cleanse()
