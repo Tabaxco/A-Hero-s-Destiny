@@ -1,7 +1,5 @@
 monstro = [
     {
-        'nome' : None,
-        'idade' : None,
         'raca' : None,
      },
     {

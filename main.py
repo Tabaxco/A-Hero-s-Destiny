@@ -2,8 +2,12 @@ from character.character_creation import starting
 from utils.cleanshell import cleanse
 from character.hero import heroi
 from time import sleep
-from monsters.creating_monster.monster_race import escolher_raca_monstro
+from monsters.monster_creation import monster_generator
+from rpg_functions import combat
+from monsters.monster import monstro
 
-starting()
-sleep(5)
-cleanse()
+monster_generator()
+print(monstro[2]['hp'])
+print(combat.atacar(12, monstro[2]['hp']))
+print(combat.atacar(12, monstro[2]['hp']))
+print(combat.atacar(12, monstro[2]['hp']))

@@ -11,3 +11,10 @@ def rolar(quantidade:int = 1, lados: int = 20, *bonus):
         soma_resultado += modificador
     
     print(f"{soma_resultado} ⟵ {resultado} {quantidade}d{lados}")
+
+    if sum(resultado) == 1:
+        mensagem = 'Falha Crítica!'
+    elif sum(resultado) == 20:
+        mensagem == 'Sucesso Crítico!'
+    
+    return soma_resultado, resultado, mensagem

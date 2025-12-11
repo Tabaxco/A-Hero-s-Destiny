@@ -14,7 +14,6 @@ def create_monster_attributes(floor, difficulty: str= "easy"):
             attributes.append(random.randint(10, 14) + (floor + 2))
         elif difficulty == 'boss':
             attributes.append(random.randint(12, 18) + (floor + 2))
-    print(attributes)
 
 
     i = 0
